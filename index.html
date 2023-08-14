@@ -6,20 +6,103 @@
 	<title>Melodi</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karma&family=Signika+Negative:wght@300;400&display=swap">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karma&family=Signika+Negative:wght@300;400;600&display=swap">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-10 col-md-6 col-xl-4 mt-5">
-				<div class="heading">Hello world!</div>
-				<p>It's me, Melodi. I'll be coding somewhere far, far away, while you are reading these lines.</p>
-				<p>You can check my projects at <a href="https://github.com/melodidev">GitHub.<i class="bi bi-stars"></i></a></p>
-			</div>
+	<header class="d-flex align-items-center clip-path vh-70 position-relative overflow-hidden bg-blue">
+		<div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
 		</div>
-	</div>
+		<div class="position-relative text-dark mx-sm-5 mx-3" data-aos="fade-left">
+			<h1 class="display-2 fw-semibold">Ezgi Okka</h1>
+			<div class="display-4">Aspiring web developer</div>
+		</div>
+	</header>
+	<main class="container">
+		<section>
+			<h2 class="fw-semibold text-center display-5 text-shadow-custom mb-4">About</h2>
+			<div class="row align-items-center justify-content-center gx-lg-5 gy-4">
+				<div class="col-12 col-md-6 col-lg-7 col-xl-8 col-xxl-6 order-md-0 order-1">
+					<div data-aos="fade-right">
+						In 2021, I dived into computer science out of curiosity. I enjoy understanding how things work under the hood, solving problems and building with logic and creativity. I have completed courses such as CS50x, CS50 Web and The Odin Project while working on minor freelance jobs. Although I mainly focus on JavaScript and React, I am also capable of developing backend applications using Django and WordPress.
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-5 col-xl-4 col-xxl-3 order-md-1 order-0">
+					<img src="assets/images/profile.jpg" alt="profile" class="img-fluid rounded-circle box-shadow-custom" data-aos="fade-left">
+				</div>
+			</div>
+		</section>
+
+		<section class="py-5">
+			<h2 class="fw-semibold text-center display-5 text-shadow-custom mb-4 mt-4 mt-sm-5">Projects</h2>
+			<div class="row gx-lg-5 gy-5" data-aos="fade-up">
+				<div class="col-12 col-md-6 col-xl-4">
+					<img src="assets/images/fish-memory.png" alt="" class="img-fluid box-shadow-custom">
+					<h3 class="fs-2 fw-semibold mt-3">Fish Memory</h3>
+					<div class="text-secondary lh-sm mb-3 mb-sm-4">
+						A memory card game developed using React and Vite. Players attempt to click on each image once; after every attempt, the cards shuffle. The goal is to achieve the highest possible score.
+					</div>
+					<a
+						href="https://github.com/melodidev/fish-memory"
+						class="link-custom text-decoration-none rounded fs-5 px-3 px-sm-4 py-1 py-sm-2 me-3"
+					>
+						View Code
+					</a>
+					<a
+						href="https://melodi.dev/fish-memory/"
+						class="link-custom-1 text-decoration-none rounded fs-5 px-3 px-sm-4 py-1 py-sm-2 me-3"
+					>
+						Live App
+					</a>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<img src="assets/images/pickplant.png" alt="" class="img-fluid box-shadow-custom">
+					<h3 class="fs-2 fw-semibold mt-3">PickPlant</h3>
+					<div class="text-secondary lh-sm mb-3 mb-sm-4">
+						Frontend e-commerce site for purchasing plants. Featuring a landing page, products page, product details and shopping cart. Users can manage their cart and navigate through pages using React Router.
+					</div>
+					<a
+						href="https://github.com/melodidev/odin-project/tree/master/PickPlant"
+						class="link-custom text-decoration-none rounded fs-5 px-3 px-sm-4 py-1 py-sm-2 me-3"
+					>
+						View Code
+					</a>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<img src="assets/images/turtle.png" alt="" class="img-fluid box-shadow-custom">
+					<h3 class="fs-2 fw-semibold mt-3">Turtle</h3>
+					<div class="text-secondary lh-sm mb-3 mb-sm-4">
+						A Wordle clone developed with React. Players try to figure out the hidden word within a limited number of attempts. With each guess, the game provides feedback on the correctness of individual letters.
+					</div>
+					<a
+						href="https://github.com/melodidev/turtle"
+						class="link-custom text-decoration-none rounded fs-5 px-3 px-sm-4 py-1 py-sm-2 me-3"
+					>
+						View Code
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="bg-light bg-opacity-25 text-center py-3 mt-lg-5">
+		<a href="https://github.com/melodidev/" class="text-decoration-none">
+			<i class="fa-brands fa-github fa-lg me-2"></i>
+			<span class="underline-hover">Find me at GitHub!</span>
+		</a>
+	</footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	once: true,
+    });
+  </script>
 </body>
 </html>

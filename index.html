@@ -3,106 +3,198 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Melodi</title>
+	<title>✨ Melodi</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karma&family=Signika+Negative:wght@300;400;600&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&family=Signika+Negative:wght@300..700&display=swap">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 	<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-	<header class="d-flex align-items-center clip-path vh-70 position-relative overflow-hidden bg-blue">
+	<header class="site-header position-relative overflow-hidden bg-blue">
 		<div>
 			<div class="layer"></div>
 			<div class="layer"></div>
 			<div class="layer"></div>
 			<div class="layer"></div>
 		</div>
-		<div class="position-relative text-dark mx-sm-5 mx-3" data-aos="fade-left">
-			<h1 class="display-2 fw-semibold">Ezgi Okka</h1>
-			<div class="display-4">Aspiring web developer</div>
+		<div class="container-lg h-100">
+			<div class="row h-100 position-relative">
+				<div class="col-12 col-md-5 pt-4 pt-md-0">
+					<div class="text-dark d-flex flex-column justify-content-center h-100" data-aos="fade-left">
+						<h1 class="display-1 fw-semibold mb-lg-4">Ezgi Okka</h1>
+						<div>
+							I've been working as a freelance web developer since 2022. Although I mainly focus on JavaScript and React, I'm also capable of developing backend applications using Django and WordPress. Nowadays, I'm focusing on improving the usability and interface of my projects by learning design. ✨
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-7 position-relative pt-4 pt-md-0">
+					<div class="me">
+						<img class="object-fit-contain w-100 h-100" src="assets/images/ezgi.png" alt="">
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
-	<main class="container">
-		<section>
-			<h2 class="fw-semibold text-center display-5 text-shadow-custom mb-4">About</h2>
-			<div class="row align-items-center justify-content-center gx-lg-5 gy-4">
-				<div class="col-12 col-md-6 col-lg-7 col-xl-8 col-xxl-6 order-md-0 order-1">
-					<div data-aos="fade-right">
-						In 2021, I dived into computer science out of curiosity. I enjoy understanding how things work under the hood, solving problems and building with logic and creativity. I have completed courses such as CS50x, CS50 Web and The Odin Project while working on minor freelance jobs. Although I mainly focus on JavaScript and React, I am also capable of developing backend applications using Django and WordPress.
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-5 col-xl-4 col-xxl-3 order-md-1 order-0">
-					<img src="assets/images/profile.jpg" alt="profile" class="img-fluid rounded-circle box-shadow-custom" data-aos="fade-left">
-				</div>
-			</div>
-		</section>
 
-		<section class="py-5">
-			<h2 class="fw-semibold text-center display-5 text-shadow-custom mb-4 mt-4 mt-sm-5">Projects</h2>
-			<div class="row gx-lg-5 gy-5" data-aos="fade-up">
-				<div class="col-12 col-md-6 col-xl-4">
-					<img src="assets/images/fish-memory.png" alt="" class="img-fluid box-shadow-custom">
-					<h3 class="fs-2 fw-semibold mt-3">Fish Memory</h3>
-					<div class="text-secondary lh-sm mb-3 mb-sm-4">
-						A memory card game developed using React and Vite. Players attempt to click on each image once; after every attempt, the cards shuffle. The goal is to achieve the highest possible score.
+	<main class="bg-circles">
+		<div class="container">
+			<section class="pt-4 pt-md-5 pb-4 pb-md-5">
+				<h2 class="fw-semibold text-center display-5 text-shadow-custom mb-5">Portfolio</h2>
+
+				<!-- Game On -->
+				<div class="row gx-lg-5 gy-3">
+					<div class="col-md-6 col-12">
+						<div class="ratio ratio-16x9">
+							<a href="assets/images/game-on.jpg" target="_blank">
+								<img src="assets/images/game-on.jpg" alt="game-on" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
+							</a>
+						</div>
 					</div>
-					<a
-						href="https://github.com/melodidev/fish-memory"
-						class="link-custom text-decoration-none rounded fs-5 px-3 px-sm-4 py-1 py-sm-2 me-3"
-					>
-						View Code
-					</a>
-					<a
-						href="https://melodi.dev/fish-memory/"
-						class="link-custom-alt text-decoration-none rounded fs-5 px-3 px-sm-4 py-1 py-sm-2 me-3"
-					>
-						Live App
-					</a>
-				</div>
-				<div class="col-12 col-md-6 col-xl-4">
-					<img src="assets/images/pickplant.png" alt="" class="img-fluid box-shadow-custom">
-					<h3 class="fs-2 fw-semibold mt-3">PickPlant</h3>
-					<div class="text-secondary lh-sm mb-3 mb-sm-4">
-						Frontend e-commerce site for purchasing plants. Featuring a landing page, products page, product details and shopping cart. Users can manage their cart and navigate through pages using React Router.
+					<div class="col-md-5 col-12">
+						<h3 class="fs-1 lh-1 mb-2">Game On</h3>
+						<div class="badge fw-normal border mb-4">UI/UX Design</div>
+						<p>
+							The design features a landing page for an e-commerce mobile website that enables customers to purchase gaming equipment. A paper wireframe was drawn, low-fidelity and high-fidelity wireframes were crafted using Figma.
+						</p>
 					</div>
-					<a
-						href="https://github.com/melodidev/odin-project/tree/master/PickPlant"
-						class="link-custom text-decoration-none rounded fs-5 px-3 px-sm-4 py-1 py-sm-2 me-3"
-					>
-						View Code
-					</a>
 				</div>
-				<div class="col-12 col-md-6 col-xl-4">
-					<img src="assets/images/turtle.png" alt="" class="img-fluid box-shadow-custom">
-					<h3 class="fs-2 fw-semibold mt-3">Turtle</h3>
-					<div class="text-secondary lh-sm mb-3 mb-sm-4">
-						A Wordle clone developed with React. Players try to figure out the hidden word within a limited number of attempts. With each guess, the game provides feedback on the correctness of individual letters.
+
+				<!-- Tırtıl -->
+				<div class="row gx-lg-5 gy-3 my-4 my-sm-5">
+					<div class="col-md-6 col-12">
+						<div class="ratio ratio-16x9">
+							<a href="assets/images/tirtil.png" target="_blank">
+								<img src="assets/images/tirtil.png" alt="tirtil" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
+							</a>
+						</div>
 					</div>
-					<a
-						href="https://github.com/melodidev/turtle"
-						class="link-custom text-decoration-none rounded fs-5 px-3 px-sm-4 py-1 py-sm-2 me-3"
-					>
-						View Code
-					</a>
+					<div class="col-md-5 col-12">
+						<h3 class="fs-1 lh-1 mb-2">Tırtıl</h3>
+						<div class="badge fw-normal border mb-4">Web Development</div>
+						<p>
+							A Wordle clone developed with React. Players try to figure out the hidden word within a limited number of attempts. With each guess, the game provides feedback on the correctness of individual letters.
+						</p>
+						<div class="d-flex gap-2 mt-4">
+							<a class="btn btn-primary" href="https://github.com/melodidev/tirtil">View Code</a>
+							<a class="btn btn-primary" href="https://melodi.dev/tirtil/">Live App</a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</section>
+
+				<!-- Fish Memory Game -->
+				<div class="row gx-lg-5 gy-3 my-4 my-sm-5">
+					<div class="col-md-6 col-12">
+						<div class="ratio ratio-16x9">
+							<a href="assets/images/fish-memory.png" target="_blank">
+								<img src="assets/images/fish-memory.png" alt="fish-memory" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-5 col-12">
+						<h3 class="fs-1 lh-1 mb-2">Fish Memory Game</h3>
+						<div class="badge fw-normal border mb-4">Web Development</div>
+						<p>
+							A memory card game developed using React and Vite. Players attempt to click on each image once; after every attempt, the cards shuffle. The goal is to achieve the highest possible score.
+						</p>
+						<div class="d-flex gap-2 mt-4">
+							<a class="btn btn-primary" href="https://github.com/melodidev/fish-memory">View Code</a>
+							<a class="btn btn-primary" href="https://melodi.dev/fish-memory/">Live App</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- The Effect of Odor on False Memory -->
+				<div class="row gx-lg-5 gy-3 my-4 my-sm-5">
+					<div class="col-md-6 col-12">
+						<div class="ratio ratio-16x9">
+							<a href="assets/images/research-project.png" target="_blank">
+								<img src="assets/images/research-project.png" alt="fish-memory" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-5 col-12">
+						<h3 class="fs-1 lh-1 mb-2">The Effect of Odor on False Memory</h3>
+						<div class="badge fw-normal border mb-4">Research Project</div>
+						<p>
+							The aim of the study was to examine whether odor leads to false memory. Forty university students from EMU were split into control and experimental groups. The experimental group was exposed to scent of coffee while watching videos, while other the group was not exposed. A questionnare about the videos was administered, asking participants whether a cup of coffee was shown in the videos. Results indicated that odor had no significant effect on false memory.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Hobbies -->
+			<section class="pb-5">
+				<h2 class="fw-semibold text-center display-5 text-shadow-custom mb-4">Hobbies</h2>
+
+				<div class="row justify-content-center mb-3 mb-md-5">
+					<div class="col-12 col-lg-8">
+						<p class="text-md-center">
+							I enjoy expressing my creativity through drawing, painting 3D figures, sculpting with clay and crocheting. Each of these hobbies allows me to explore different artistic techniques, from capturing images on paper to molding three-dimensional forms and crafting garments with yarn.
+						</p>
+					</div>
+				</div>
+
+				<div class="row gy-4">
+					<div class="col-12 col-sm-6 col-lg">
+						<figure class="figure d-block">
+							<div class="figure-img ratio ratio-2x3">
+								<a href="assets/images/clay.jpg" target="_blank">
+									<img class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src="assets/images/clay.jpg" alt="">
+								</a>
+							</div>
+							<figcaption class="figure-caption text-center text-light">Clay modeling</figcaption>
+						</figure>
+					</div>
+					<div class="col-12 col-sm-6 col-lg">
+						<figure class="figure d-block">
+							<div class="figure-img ratio ratio-2x3">
+								<a href="assets/images/drawing.jpg" target="_blank">
+									<img class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src="assets/images/drawing.jpg" alt="">
+								</a>
+							</div>
+							<figcaption class="figure-caption text-center text-light">Drawing</figcaption>
+						</figure>
+					</div>
+					<div class="col-12 col-sm-6 col-lg">
+						<figure class="figure d-block">
+							<div class="figure-img ratio ratio-2x3">
+								<a href="assets/images/painting.jpg" target="_blank">
+									<img class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src="assets/images/painting.jpg" alt="">
+								</a>
+							</div>
+							<figcaption class="figure-caption text-center text-light">Figure painting</figcaption>
+						</figure>
+					</div>
+					<div class="col-12 col-sm-6 col-lg">
+						<figure class="figure d-block">
+							<div class="figure-img ratio ratio-2x3">
+								<a href="assets/images/crochet.jpg" target="_blank">
+									<img class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src="assets/images/crochet.jpg" alt="">
+								</a>
+							</div>
+							<figcaption class="figure-caption text-center text-light">Crochet</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+		</div>
 	</main>
 
-	<footer class="bg-light bg-opacity-25 text-center py-3 mt-lg-5">
-		<a href="https://github.com/melodidev/" class="text-decoration-none">
+	<footer class="text-center py-3">
+		<a class="text-decoration-none" href="https://github.com/melodidev/">
 			<i class="fa-brands fa-github fa-lg me-2"></i>
 			<span class="underline-hover">Find me at GitHub!</span>
 		</a>
 	</footer>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-    	once: true,
-    });
-  </script>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			once: true,
+		});
+	</script>
 </body>
 </html>

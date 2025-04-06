@@ -1,23 +1,18 @@
-import clay from '@/assets/images/clay.jpg';
-import drawing from '@/assets/images/drawing.jpg';
-import painting from '@/assets/images/painting.jpg';
-import crochet from '@/assets/images/crochet.jpg';
-
 export default [
   {
     title: 'Clay modeling',
-    image: clay,
+    image: '@/assets/images/clay.jpg',
   },
   {
     title: 'Drawing',
-    image: drawing,
+    image: '@/assets/images/drawing.jpg',
   },
   {
     title: 'Figure painting',
-    image: painting,
+    image: '@/assets/images/painting.jpg',
   },
   {
     title: 'Crochet',
-    image: crochet,
+    image: '@/assets/images/crochet.jpg',
   },
 ];

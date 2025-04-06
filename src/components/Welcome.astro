@@ -1,3 +1,17 @@
+---
+import { Image } from 'astro:assets';
+
+import ezgi from '@/assets/images/ezgi.png';
+import gameOn from '@/assets/images/game-on.jpg';
+import tirtil from '@/assets/images/tirtil.png';
+import fishMemory from '@/assets/images/fish-memory.png';
+import researchProject from '@/assets/images/research-project.png';
+import clay from '@/assets/images/clay.jpg';
+import drawing from '@/assets/images/drawing.jpg';
+import painting from '@/assets/images/painting.jpg';
+import crochet from '@/assets/images/crochet.jpg';
+---
+
 <header class="site-header position-relative overflow-hidden bg-blue">
 	<div>
 		<div class="layer"></div>
@@ -17,7 +31,7 @@
 			</div>
 			<div class="col-12 col-md-7 position-relative pt-4 pt-md-0">
 				<div class="me">
-					<img class="object-fit-contain w-100 h-100" src="assets/images/ezgi.png" alt="">
+					<Image class="object-fit-contain w-100 h-100" src={ezgi} alt="">
 				</div>
 			</div>
 		</div>
@@ -34,7 +48,7 @@
 				<div class="col-md-6 col-12">
 					<div class="lightbox-gallery ratio ratio-16x9">
 						<a class="lightbox-image" href="assets/images/game-on.jpg" data-pswp-width="1507" data-pswp-height="1920" target="_blank">
-							<img src="assets/images/game-on.jpg" alt="game-on" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
+							<Image src={gameOn} alt="game-on" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
 						</a>
 					</div>
 				</div>
@@ -52,7 +66,7 @@
 				<div class="col-md-6 col-12">
 					<div class="lightbox-gallery ratio ratio-16x9">
 						<a class="lightbox-image" href="assets/images/tirtil.png" data-pswp-width="1627" data-pswp-height="905" target="_blank">
-							<img src="assets/images/tirtil.png" alt="tirtil" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
+							<Image src={tirtil} alt="tirtil" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
 						</a>
 					</div>
 				</div>
@@ -74,7 +88,7 @@
 				<div class="col-md-6 col-12">
 					<div class="lightbox-gallery ratio ratio-16x9">
 						<a class="lightbox-image" href="assets/images/fish-memory.png" data-pswp-width="1500" data-pswp-height="900" target="_blank">
-							<img src="assets/images/fish-memory.png" alt="fish-memory" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
+							<Image src={fishMemory} alt="fish-memory" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
 						</a>
 					</div>
 				</div>
@@ -96,7 +110,7 @@
 				<div class="col-md-6 col-12">
 					<div class="lightbox-gallery ratio ratio-16x9">
 						<a class="lightbox-image" href="assets/images/research-project.png" data-pswp-width="746" data-pswp-height="420" target="_blank">
-							<img src="assets/images/research-project.png" alt="fish-memory" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
+							<Image src={researchProject} alt="fish-memory" class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom">
 						</a>
 					</div>
 				</div>
@@ -127,7 +141,7 @@
 					<figure class="figure d-block" data-aos="fade-up" data-aos-delay="0">
 						<div class="figure-img ratio ratio-2x3">
 							<a class="lightbox-image" href="assets/images/clay.jpg" data-pswp-width="1920" data-pswp-height="1080" target="_blank">
-								<img class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src="assets/images/clay.jpg" alt="">
+								<Image class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src={clay} alt="">
 							</a>
 						</div>
 						<figcaption class="figure-caption text-center text-light">Clay modeling</figcaption>
@@ -137,7 +151,7 @@
 					<figure class="figure d-block" data-aos="fade-up" data-aos-delay="100">
 						<div class="figure-img ratio ratio-2x3">
 							<a class="lightbox-image" href="assets/images/drawing.jpg" data-pswp-width="1362" data-pswp-height="1920" target="_blank">
-								<img class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src="assets/images/drawing.jpg" alt="">
+								<Image class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src={drawing} alt="">
 							</a>
 						</div>
 						<figcaption class="figure-caption text-center text-light">Drawing</figcaption>
@@ -147,7 +161,7 @@
 					<figure class="figure d-block" data-aos="fade-up" data-aos-delay="200">
 						<div class="figure-img ratio ratio-2x3">
 							<a class="lightbox-image" href="assets/images/painting.jpg" data-pswp-width="1440" data-pswp-height="1920" target="_blank">
-								<img class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src="assets/images/painting.jpg" alt="">
+								<Image class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src={painting} alt="">
 							</a>
 						</div>
 						<figcaption class="figure-caption text-center text-light">Figure painting</figcaption>
@@ -157,7 +171,7 @@
 					<figure class="figure d-block" data-aos="fade-up" data-aos-delay="300">
 						<div class="figure-img ratio ratio-2x3">
 							<a class="lightbox-image" href="assets/images/crochet.jpg" data-pswp-width="1215" data-pswp-height="1701" target="_blank">
-								<img class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src="assets/images/crochet.jpg" alt="">
+								<Image class="object-fit-cover w-100 h-100 rounded box-shadow-custom" src={crochet} alt="">
 							</a>
 						</div>
 						<figcaption class="figure-caption text-center text-light">Crochet</figcaption>

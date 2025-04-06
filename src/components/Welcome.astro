@@ -1,7 +1,6 @@
 ---
 import { Image } from 'astro:assets';
 
-import ezgi from '@/assets/images/ezgi.png';
 import gameOn from '@/assets/images/game-on.jpg';
 import tirtil from '@/assets/images/tirtil.png';
 import fishMemory from '@/assets/images/fish-memory.png';
@@ -11,32 +10,6 @@ import drawing from '@/assets/images/drawing.jpg';
 import painting from '@/assets/images/painting.jpg';
 import crochet from '@/assets/images/crochet.jpg';
 ---
-
-<header class="site-header position-relative overflow-hidden bg-blue">
-	<div>
-		<div class="layer"></div>
-		<div class="layer"></div>
-		<div class="layer"></div>
-		<div class="layer"></div>
-	</div>
-	<div class="container-lg h-100">
-		<div class="row h-100 position-relative">
-			<div class="col-12 col-md-5 pt-4 pt-md-0">
-				<div class="text-dark d-flex flex-column justify-content-center h-100" data-aos="fade-left">
-					<h1 class="display-1 fw-semibold mb-lg-4">Ezgi Okka</h1>
-					<div>
-						I've been working as a freelance web developer since 2022. Although I mainly focus on JavaScript and React, I'm also capable of developing backend applications using Django and WordPress. Nowadays, I'm focusing on improving the usability and interface of my projects by learning design. ✨
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-md-7 position-relative pt-4 pt-md-0">
-				<div class="me">
-					<Image class="object-fit-contain w-100 h-100" src={ezgi} alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
 
 <main class="bg-circles">
 	<div class="container">
@@ -181,10 +154,3 @@ import crochet from '@/assets/images/crochet.jpg';
 		</section>
 	</div>
 </main>
-
-<footer class="text-center py-3">
-	<a class="text-decoration-none" href="https://github.com/melodidev/">
-		<i class="fa-brands fa-github fa-lg me-2"></i>
-		<span class="underline-hover">Find me at GitHub!</span>
-	</a>
-</footer>

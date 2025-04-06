@@ -1,14 +1,13 @@
 ---
 import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
 
 import gameOn from '@/assets/images/game-on.jpg';
 import tirtil from '@/assets/images/tirtil.png';
 import fishMemory from '@/assets/images/fish-memory.png';
 import researchProject from '@/assets/images/research-project.png';
-import clay from '@/assets/images/clay.jpg';
-import drawing from '@/assets/images/drawing.jpg';
-import painting from '@/assets/images/painting.jpg';
-import crochet from '@/assets/images/crochet.jpg';
+
+const hobbies = await getCollection('hobbies');
 ---
 
 <main class="bg-circles">
@@ -182,106 +181,30 @@ import crochet from '@/assets/images/crochet.jpg';
       </div>
 
       <div class="row gy-4 lightbox-gallery">
-        <div class="col-12 col-sm-6 col-lg">
-          <figure class="figure d-block" data-aos="fade-up" data-aos-delay="0">
-            <div class="figure-img ratio ratio-2x3">
-              <a
-                class="lightbox-image"
-                href={clay.src}
-                data-pswp-width={clay.width}
-                data-pswp-height={clay.height}
-                target="_blank"
-              >
-                <Image
-                  class="object-fit-cover w-100 h-100 rounded box-shadow-custom"
-                  src={clay}
-                  alt=""
-                />
-              </a>
-            </div>
-            <figcaption class="figure-caption text-center text-light">
-              Clay modeling
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-12 col-sm-6 col-lg">
-          <figure
-            class="figure d-block"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="figure-img ratio ratio-2x3">
-              <a
-                class="lightbox-image"
-                href={drawing.src}
-                data-pswp-width={drawing.width}
-                data-pswp-height={drawing.height}
-                target="_blank"
-              >
-                <Image
-                  class="object-fit-cover w-100 h-100 rounded box-shadow-custom"
-                  src={drawing}
-                  alt=""
-                />
-              </a>
-            </div>
-            <figcaption class="figure-caption text-center text-light">
-              Drawing
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-12 col-sm-6 col-lg">
-          <figure
-            class="figure d-block"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="figure-img ratio ratio-2x3">
-              <a
-                class="lightbox-image"
-                href={painting.src}
-                data-pswp-width={painting.width}
-                data-pswp-height={painting.height}
-                target="_blank"
-              >
-                <Image
-                  class="object-fit-cover w-100 h-100 rounded box-shadow-custom"
-                  src={painting}
-                  alt=""
-                />
-              </a>
-            </div>
-            <figcaption class="figure-caption text-center text-light">
-              Figure painting
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-12 col-sm-6 col-lg">
-          <figure
-            class="figure d-block"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="figure-img ratio ratio-2x3">
-              <a
-                class="lightbox-image"
-                href={crochet.src}
-                data-pswp-width={crochet.width}
-                data-pswp-height={crochet.height}
-                target="_blank"
-              >
-                <Image
-                  class="object-fit-cover w-100 h-100 rounded box-shadow-custom"
-                  src={crochet}
-                  alt=""
-                />
-              </a>
-            </div>
-            <figcaption class="figure-caption text-center text-light">
-              Crochet
-            </figcaption>
-          </figure>
-        </div>
+        {hobbies.map(({ data: { title, image } }, i) => (
+          <div class="col-12 col-sm-6 col-lg">
+            <figure class="figure d-block" data-aos="fade-up" data-aos-delay={i * 100}>
+              <div class="figure-img ratio ratio-2x3">
+                <a
+                  class="lightbox-image"
+                  href={image.src}
+                  data-pswp-width={image.width}
+                  data-pswp-height={image.height}
+                  target="_blank"
+                >
+                  <Image
+                    class="object-fit-cover w-100 h-100 rounded box-shadow-custom"
+                    src={image}
+                    alt=""
+                  />
+                </a>
+              </div>
+              <figcaption class="figure-caption text-center text-light">
+                {title}
+              </figcaption>
+            </figure>
+          </div>
+        ))}
       </div>
     </section>
   </div>

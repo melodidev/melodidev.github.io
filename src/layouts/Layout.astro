@@ -4,6 +4,7 @@ import Header from '@/components/Header.astro';
 
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'photoswipe/style.css';
 
 import '@/styles/styles.css';
 ---
@@ -24,10 +25,6 @@ import '@/styles/styles.css';
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.min.css"
-    />
   </head>
   <body>
     <Header />
@@ -36,14 +33,9 @@ import '@/styles/styles.css';
 
     <Footer />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/umd/photoswipe.umd.min.js"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/umd/photoswipe-lightbox.umd.min.js"
-    ></script>
     <script>
       import AOS from 'aos';
+      import PhotoSwipeLightbox from 'photoswipe/lightbox';
 
       AOS.init({
         once: true,
@@ -52,7 +44,7 @@ import '@/styles/styles.css';
       const lightbox = new PhotoSwipeLightbox({
         gallery: '.lightbox-gallery',
         children: '.lightbox-image',
-        pswpModule: PhotoSwipe,
+        pswpModule: () => import('photoswipe'),
       });
       lightbox.init();
     </script>

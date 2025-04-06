@@ -2,7 +2,9 @@
 import Footer from '@/components/Footer.astro';
 import Header from '@/components/Header.astro';
 
+import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.css';
+
 import '@/styles/styles.css';
 ---
 
@@ -22,7 +24,6 @@ import '@/styles/styles.css';
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.min.css"
@@ -35,7 +36,6 @@ import '@/styles/styles.css';
 
     <Footer />
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/umd/photoswipe.umd.min.js"
     ></script>
@@ -43,6 +43,8 @@ import '@/styles/styles.css';
       src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/umd/photoswipe-lightbox.umd.min.js"
     ></script>
     <script>
+      import AOS from 'aos';
+
       AOS.init({
         once: true,
       });

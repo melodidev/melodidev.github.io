@@ -1,11 +1,24 @@
 ---
-import Welcome from '@/components/Welcome.astro';
+import GradientBackground from '@/components/GradientBackground.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import HomeLayout from '@/layouts/HomeLayout.astro';
 ---
 
 <BaseLayout>
-  <HomeLayout>
-    <Welcome />
-  </HomeLayout>
+  <main>
+    <GradientBackground />
+    <div class="position-relative text-center text-dark">
+      <h1 class="display-5 lh-1 mb-2">Ezgi<br />Okka</h1>
+      <div class="fs-5 fw-semibold">Interaction Designer</div>
+    </div>
+  </main>
 </BaseLayout>
+
+<style>
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+</style>

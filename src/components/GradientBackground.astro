@@ -1,0 +1,116 @@
+<div class="layer-wrapper">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+</div>
+
+<style>
+  /* https://www.cssscript.com/animated-gradient-background-with-pure-css */
+
+  .layer-wrapper {
+    background-color: var(--blue);
+    overflow: hidden;
+    position: absolute;
+    inset: 0;
+  }
+
+  .layer {
+    border-radius: 50%;
+    opacity: 0.25;
+    position: absolute;
+    width: 0.001vmin;
+    height: 0.001vmin;
+
+    &:nth-child(2) {
+      box-shadow: 0 0 45vmax 45vmax #ff00ff;
+      animation:
+        hue 10s 0s linear infinite,
+        move1 19s 0s linear infinite;
+    }
+
+    &:nth-child(3) {
+      box-shadow: 0 0 45vmax 45vmax #ffffff;
+      animation:
+        hue 15s 0s linear infinite,
+        move2 25s 0s linear infinite;
+    }
+
+    &:nth-child(4) {
+      box-shadow: 0 0 45vmax 45vmax #00ffff;
+      animation:
+        hue 20s 0s linear infinite,
+        move3 15s 0s linear infinite;
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes hue {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  @keyframes move1 {
+    0% {
+      top: 0vh;
+      left: 50vw;
+    }
+    25% {
+      left: 0vw;
+    }
+    50% {
+      top: 100vh;
+    }
+    75% {
+      left: 100vw;
+    }
+    100% {
+      top: 0vh;
+      left: 50vw;
+    }
+  }
+
+  @keyframes move2 {
+    0% {
+      top: 50vh;
+      left: 100vw;
+    }
+    25% {
+      top: 100vh;
+    }
+    50% {
+      left: 0vw;
+    }
+    75% {
+      top: 0vh;
+    }
+    100% {
+      top: 50vh;
+      left: 100vw;
+    }
+  }
+
+  @keyframes move3 {
+    0% {
+      top: 100vh;
+      left: 50vw;
+    }
+    25% {
+      left: 100vw;
+    }
+    50% {
+      top: 0vh;
+    }
+    75% {
+      left: 0vw;
+    }
+    100% {
+      top: 100vh;
+      left: 50vw;
+    }
+  }
+</style>

@@ -5,12 +5,15 @@ import 'photoswipe/style.css';
 
 import Footer from '@/components/Footer.astro';
 import Header from '@/components/Header.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 ---
 
-<div>
+<BaseLayout {...Astro.props}>
   <Header />
 
-  <slot />
+  <main>
+    <slot />
+  </main>
 
   <Footer />
 
@@ -29,4 +32,4 @@ import Header from '@/components/Header.astro';
     });
     lightbox.init();
   </script>
-</div>
+</BaseLayout>

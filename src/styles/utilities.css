@@ -1,0 +1,34 @@
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-circles {
+  background-image: radial-gradient(#2f3a4c 1px, #071f35 1px);
+  background-size: 22px 22px;
+  background-position: 22px;
+}
+
+.box-shadow-custom {
+  box-shadow: 3px 3px 0px var(--primary);
+}
+.text-shadow-custom {
+  text-shadow: 2px 2px 0px var(--primary);
+}
+
+.object-position-top {
+  object-position: top;
+}
+.object-position-bottom {
+  object-position: bottom;
+}
+
+.ratio-2x3 {
+  --bs-aspect-ratio: 150%;
+}
+
+.underline-hover {
+  text-decoration: none;
+}
+.underline-hover:hover {
+  text-decoration: underline;
+}

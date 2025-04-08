@@ -1,0 +1,29 @@
+:root {
+  /* https://coolors.co/f8f9fa-071f35-9d63cf-fafa38-433bff-0b5ed7 */
+  --blue: #a1c4fd;
+  --dark-blue: #071f35;
+  --primary: #9d63cf;
+  --secondary: #fbfb66;
+  --accent: #433bff;
+  --accent-hover: #3630cc;
+  --bs-body-color: #f8f9fa;
+  --bs-dark-rgb: 7, 31, 53;
+  --bs-border-color: var(--secondary);
+  --bs-link-color-rgb: 248, 249, 250;
+  --bs-link-hover-color-rgb: 198, 204, 210;
+}
+
+body {
+  font-family: 'Signika Negative Variable', sans-serif;
+  font-size: 18px;
+  background-color: var(--dark-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Righteous', sans-serif;
+}

@@ -2,4 +2,31 @@
 import '@fortawesome/fontawesome-free/css/all.css';
 import 'aos/dist/aos.css';
 import 'photoswipe/style.css';
+
+import Footer from '@/components/Footer.astro';
+import Header from '@/components/Header.astro';
 ---
+
+<div>
+  <Header />
+
+  <slot />
+
+  <Footer />
+
+  <script>
+    import AOS from 'aos';
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+
+    AOS.init({
+      once: true,
+    });
+
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '.lightbox-gallery',
+      children: '.lightbox-image',
+      pswpModule: () => import('photoswipe'),
+    });
+    lightbox.init();
+  </script>
+</div>

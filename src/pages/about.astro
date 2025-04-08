@@ -1,0 +1,96 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+import ezgi from '@/assets/images/ezgi.png';
+
+const hobbies = await getCollection('hobbies');
+---
+
+<BaseLayout title="About | Melodi">
+  <DefaultLayout>
+    <main>
+      <div class="bg-blue">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5 pt-4 pt-md-0">
+              <div
+                class="d-flex flex-column justify-content-center h-100"
+                data-aos="fade-left"
+              >
+                <h1 class="display-1 fw-semibold mb-lg-4">Ezgi Okka</h1>
+                <div>
+                  I've been working as a freelance web developer since 2022.
+                  Although I mainly focus on JavaScript and React, I'm also
+                  capable of developing backend applications using Django and
+                  WordPress. Nowadays, I'm focusing on improving the usability
+                  and interface of my projects by learning design. ✨
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-7 pt-4 pt-md-0">
+              <Image class="object-fit-contain w-100 h-100" src={ezgi} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hobbies -->
+      <section class="bg-circles py-5">
+        <div class="container">
+          <h2 class="fw-semibold text-center display-5 text-shadow-custom mb-4">
+            Hobbies
+          </h2>
+
+          <div class="row justify-content-center mb-3 mb-md-5">
+            <div class="col-12 col-lg-8">
+              <p class="text-md-center">
+                I enjoy expressing my creativity through drawing, painting 3D
+                figures, sculpting with clay and crocheting. Each of these
+                hobbies allows me to explore different artistic techniques, from
+                capturing images on paper to molding three-dimensional forms and
+                crafting garments with yarn.
+              </p>
+            </div>
+          </div>
+
+          <div class="row gy-4 lightbox-gallery">
+            {
+              hobbies.map(({ data: { title, image } }, i) => (
+                <div class="col-12 col-sm-6 col-lg">
+                  <figure
+                    class="figure d-block"
+                    data-aos="fade-up"
+                    data-aos-delay={i * 100}
+                  >
+                    <div class="figure-img ratio ratio-2x3">
+                      <a
+                        class="lightbox-image"
+                        href={image.src}
+                        data-pswp-width={image.width}
+                        data-pswp-height={image.height}
+                        target="_blank"
+                      >
+                        <Image
+                          class="object-fit-cover w-100 h-100 rounded box-shadow-custom"
+                          src={image}
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <figcaption class="figure-caption text-center text-light">
+                      {title}
+                    </figcaption>
+                  </figure>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+    </main>
+  </DefaultLayout>
+</BaseLayout>

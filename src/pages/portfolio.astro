@@ -1,0 +1,70 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+const portfolio = await getCollection('portfolio');
+---
+
+<BaseLayout title="Portfolio | Melodi">
+  <DefaultLayout>
+    <main>
+      <section class="bg-circles py-5">
+        <div class="container">
+          <h2 class="fw-semibold text-center display-5 text-shadow-custom mb-5">
+            Portfolio
+          </h2>
+
+          {
+            portfolio.map(
+              ({
+                data: { title, category, description, codeUrl, appUrl, image },
+              }) => (
+                <div class="row gx-lg-5 gy-3 my-4 my-sm-5" data-aos="fade-up">
+                  <div class="col-md-6 col-12">
+                    <div class="lightbox-gallery ratio ratio-16x9">
+                      <a
+                        class="lightbox-image"
+                        href={image.src}
+                        data-pswp-width={image.width}
+                        data-pswp-height={image.height}
+                        target="_blank"
+                      >
+                        <Image
+                          class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom"
+                          src={image}
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-5 col-12">
+                    <h3 class="fs-1 lh-1 mb-2">{title}</h3>
+                    <div class="badge fw-normal border mb-4">{category}</div>
+                    <p>{description}</p>
+                    {(codeUrl || appUrl) && (
+                      <div class="d-flex gap-2 mt-4">
+                        {codeUrl && (
+                          <a class="btn btn-primary" href={codeUrl}>
+                            View Code
+                          </a>
+                        )}
+                        {appUrl && (
+                          <a class="btn btn-primary" href={appUrl}>
+                            Live App
+                          </a>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )
+            )
+          }
+        </div>
+      </section>
+    </main>
+  </DefaultLayout>
+</BaseLayout>

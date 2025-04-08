@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'photoswipe/style.css';
 
 import '@/styles/styles.css';
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -15,6 +17,7 @@ import '@/styles/styles.css';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>✨ Melodi</title>
+    <link rel="canonical" href={canonicalURL} />
   </head>
   <body>
     <slot />

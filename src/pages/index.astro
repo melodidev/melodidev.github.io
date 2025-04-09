@@ -1,16 +1,38 @@
 ---
+import Gestalt from '@/components/Gestalt.astro';
 import GradientBackground from '@/components/GradientBackground.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
-  <main>
+  <main class="overflow-hidden">
     <GradientBackground />
-    <div class="position-relative text-center text-dark">
-      <h1 class="display-5 lh-1 mb-2">Ezgi<br />Okka</h1>
-      <div class="fs-5 fw-semibold">Interaction Designer</div>
-    </div>
+
+    <Gestalt>
+      <h1 class="display-5 lh-1 text-center text-dark mb-2">Ezgi<br />Okka</h1>
+      <p class="fs-5 fw-semibold lh-1 text-center text-dark mb-0">
+        Interaction Designer
+      </p>
+    </Gestalt>
   </main>
+
+  <script>
+    import { animate, createSpring } from 'animejs';
+
+    animate('h1', {
+      opacity: [{ from: 0, to: 1, duration: 1000 }],
+      scale: [
+        { to: 1.25, ease: 'inOut(3)', duration: 200 },
+        { to: 1, ease: createSpring({ stiffness: 300 }) },
+      ],
+      delay: 1000,
+    });
+
+    animate('p', {
+      opacity: [{ from: 0, to: 1, duration: 1000 }],
+      delay: 2000,
+    });
+  </script>
 </BaseLayout>
 
 <style>

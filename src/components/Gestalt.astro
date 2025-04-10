@@ -1,8 +1,35 @@
 <div>
   <div class="circles">
-    <a class="circle circle-top" href="/about" aria-label="About"></a>
-    <a class="circle circle-left" href="/portfolio" aria-label="Portfolio"></a>
-    <a class="circle circle-right" href="/blog" aria-label="Blog"></a>
+    <a class="circle circle-top" href="/about" aria-label="About">
+      <span class="circle-text" aria-hidden="true">
+        <span style="--i: 0;">A</span>
+        <span style="--i: 1;">b</span>
+        <span style="--i: 2;">o</span>
+        <span style="--i: 3;">u</span>
+        <span style="--i: 4;">t</span>
+      </span>
+    </a>
+    <a class="circle circle-left" href="/portfolio" aria-label="Portfolio">
+      <span class="circle-text" aria-hidden="true">
+        <span style="--i: 0;">P</span>
+        <span style="--i: 1;">o</span>
+        <span style="--i: 2;">r</span>
+        <span style="--i: 3;">t</span>
+        <span style="--i: 4;">f</span>
+        <span style="--i: 5;">o</span>
+        <span style="--i: 6;">l</span>
+        <span style="--i: 7;">i</span>
+        <span style="--i: 8;">o</span>
+      </span>
+    </a>
+    <a class="circle circle-right" href="/blog" aria-label="Blog">
+      <span class="circle-text" aria-hidden="true">
+        <span style="--i: 0;">B</span>
+        <span style="--i: 1;">l</span>
+        <span style="--i: 2;">o</span>
+        <span style="--i: 3;">g</span>
+      </span>
+    </a>
   </div>
 
   <div class="position-relative">
@@ -11,43 +38,47 @@
 </div>
 
 <script>
-  import { animate } from 'animejs';
+  import { animate, type AnimationParams } from 'animejs';
 
-  const r = 16;
-  const x = (r * Math.sqrt(3)) / 2;
-  const y = r / 2;
+  const r = 18;
+  const t = 8;
 
-  animate('.circle', {
-    opacity: [{ from: 0, to: 1, duration: 1000 }],
-  });
+  const x = (r: number) => (r * Math.sqrt(3)) / 2;
+  const y = (r: number) => r / 2;
+
+  const moveCircleParams: AnimationParams = {
+    delay: 1000,
+    duration: 2000,
+    ease: 'cubicBezier(.5,0,.5,1)',
+  };
 
   animate('.circle-top', {
-    top: [{ to: `-${r}rem`, duration: 1000 }],
-    '--angle': [
-      { to: '60deg', delay: 2000, duration: 1000 },
-      { to: '0deg', ease: 'outElastic', duration: 150 },
-      { to: '60deg', duration: 150 },
-    ],
+    top: [{ to: `clamp(-${t * 2}rem, -${r}vw, -${t}rem)` }],
+    ...moveCircleParams,
   });
-
   animate('.circle-left', {
-    left: [{ to: `-${x}rem`, duration: 1000 }],
-    top: [{ to: `${y}rem`, duration: 1000 }],
-    '--angle': [
-      { to: '60deg', delay: 2000, duration: 1000 },
-      { to: '0deg', ease: 'outElastic', delay: 450, duration: 150 },
-      { to: '60deg', duration: 150 },
-    ],
+    left: [{ to: `clamp(-${x(t * 2)}rem, -${x(r)}vw, -${x(t)}rem)` }],
+    top: [{ to: `clamp(${y(t)}rem, ${y(r)}vw, ${y(t * 2)}rem)` }],
+    ...moveCircleParams,
+  });
+  animate('.circle-right', {
+    left: [{ to: `clamp(${x(t)}rem, ${x(r)}vw, ${x(t * 2)}rem)` }],
+    top: [{ to: `clamp(${y(t)}rem, ${y(r)}vw, ${y(t * 2)}rem)` }],
+    ...moveCircleParams,
   });
 
-  animate('.circle-right', {
-    left: [{ to: `${x}rem`, duration: 1000 }],
-    top: [{ to: `${y}rem`, duration: 1000 }],
-    '--angle': [
-      { to: '60deg', delay: 2000, duration: 1000 },
-      { to: '0deg', ease: 'outElastic', delay: 750, duration: 150 },
-      { to: '60deg', duration: 150 },
-    ],
+  animate('.circle', {
+    '--angle': [{ to: '60deg' }],
+    delay: 3000,
+    duration: 1000,
+    ease: 'out(3)',
+  });
+
+  animate('.circle-text', {
+    opacity: [{ to: 0.5 }],
+    '--angle': [{ from: '0deg', to: '20deg' }],
+    delay: 6500,
+    duration: 500,
   });
 </script>
 
@@ -69,7 +100,7 @@
     --bg: var(--bs-dark);
     --p1: calc(30deg - var(--angle) / 2);
     --p2: calc(30deg + var(--angle) / 2);
-    --size: 10vw;
+    --size: clamp(96px, 10vw, 196px);
 
     background: conic-gradient(
       var(--bg) var(--p1),
@@ -81,23 +112,63 @@
     position: absolute;
     width: var(--size);
     height: var(--size);
+    text-decoration: none;
     translate: -50% -50%;
-    transition: --bg 0.15s ease-in-out;
+    transition:
+      --bg 0.15s ease-in-out,
+      scale 0.15s ease-in-out;
 
     &:hover {
-      --bg: var(--primary);
+      --bg: color-mix(in srgb, var(--bs-white), var(--bs-dark) 95%);
+      scale: 1.05;
+    }
+  }
+
+  .circle-text {
+    --angle: 0deg;
+
+    color: var(--bs-white);
+    display: block;
+    font-size: clamp(0.5rem, 0.5vw + 0.5rem, 1.5rem);
+    font-weight: 300;
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+
+    & > span {
+      position: absolute;
+      left: 50%;
+      top: 5%;
+      bottom: 5%;
+      rotate: calc(var(--angle) * var(--i));
+      translate: -50%;
+      transform-origin: center;
     }
   }
 
   .circle-top {
     rotate: 150deg;
+
+    .circle-text {
+      rotate: 170deg;
+    }
   }
 
   .circle-left {
     rotate: 30deg;
+
+    .circle-text {
+      rotate: 130deg;
+    }
   }
 
   .circle-right {
     rotate: 270deg;
+
+    .circle-text {
+      rotate: 180deg;
+    }
   }
 </style>

@@ -9,28 +9,24 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
     <GradientBackground />
 
     <Gestalt>
-      <h1 class="display-5 lh-1 text-center text-dark mb-2">Ezgi<br />Okka</h1>
-      <p class="fs-5 fw-semibold lh-1 text-center text-dark mb-0">
-        Interaction Designer
-      </p>
+      <h1 class="display-5 lh-1 text-center text-dark mb-3">Ezgi<br />Okka</h1>
+      <p class="fs-5 lh-1 text-center text-dark mb-0">Interaction Designer</p>
     </Gestalt>
   </main>
 
   <script>
-    import { animate, createSpring } from 'animejs';
+    import { animate } from 'animejs';
 
     animate('h1', {
-      opacity: [{ from: 0, to: 1, duration: 1000 }],
-      scale: [
-        { to: 1.25, ease: 'inOut(3)', duration: 200 },
-        { to: 1, ease: createSpring({ stiffness: 300 }) },
-      ],
-      delay: 1000,
+      opacity: [{ to: 1 }],
+      delay: 4000,
+      duration: 1000,
     });
 
     animate('p', {
-      opacity: [{ from: 0, to: 1, duration: 1000 }],
-      delay: 2000,
+      opacity: [{ to: 1 }],
+      delay: 5000,
+      duration: 1000,
     });
   </script>
 </BaseLayout>
@@ -42,5 +38,10 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
     justify-content: center;
     height: 100vh;
     position: relative;
+  }
+
+  h1,
+  p {
+    opacity: 0;
   }
 </style>

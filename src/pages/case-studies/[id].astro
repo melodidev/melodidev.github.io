@@ -15,7 +15,10 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<DefaultLayout title={`${post.data.title} | Melodi`}>
+<DefaultLayout
+  title={`${post.data.title} | Melodi`}
+  description={post.data.excerpt}
+>
   <section class="bg-circles py-5">
     <div class="container">
       <h1 class="fw-semibold text-center display-5 text-shadow-custom mb-5">

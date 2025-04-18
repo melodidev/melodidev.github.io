@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 
 import DefaultLayout from '@/layouts/DefaultLayout.astro';
 
+const caseStudies = await getCollection('caseStudies');
 const portfolio = await getCollection('portfolio');
 ---
 
@@ -11,7 +12,39 @@ const portfolio = await getCollection('portfolio');
   <section class="bg-circles py-5">
     <div class="container">
       <h2 class="fw-semibold text-center display-5 text-shadow-custom mb-5">
-        Portfolio
+        Case Studies
+      </h2>
+
+      <div class="row gx-lg-5 gy-3 my-4 my-sm-5">
+        {
+          caseStudies.map(({ id, data: { title, excerpt, image } }) => (
+            <div class="col-12 col-md" data-aos="fade-up">
+              <div class="ratio ratio-16x9 mb-3">
+                <a href={`/case-studies/${id}`}>
+                  <Image
+                    class="object-fit-cover object-position-top w-100 h-100 rounded box-shadow-custom"
+                    src={image}
+                    alt={title}
+                  />
+                </a>
+              </div>
+              <h3 class="fs-1 lh-1 mb-4">
+                <a class="text-decoration-none" href={`/case-studies/${id}`}>
+                  {title}
+                </a>
+              </h3>
+              <p>{excerpt}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-circles pb-5">
+    <div class="container">
+      <h2 class="fw-semibold text-center display-5 text-shadow-custom mb-5">
+        Other Projects
       </h2>
 
       {

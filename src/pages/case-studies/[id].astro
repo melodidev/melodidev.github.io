@@ -1,0 +1,67 @@
+---
+import { getCollection, render } from 'astro:content';
+
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+export const getStaticPaths = async () => {
+  const posts = await getCollection('caseStudies');
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+};
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<DefaultLayout title={`${post.data.title} | Melodi`}>
+  <section class="bg-circles py-5">
+    <div class="container">
+      <h1 class="fw-semibold text-center display-5 text-shadow-custom mb-5">
+        {post.data.title}
+      </h1>
+
+      <div class="prose">
+        <Content />
+
+        <footer class="mt-5">
+          <a href="/portfolio">
+            <i class="fa-solid fa-arrow-left me-2"></i>Back to portfolio
+          </a>
+        </footer>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style>
+  .prose {
+    margin-inline: auto;
+    max-width: 720px;
+
+    blockquote {
+      border-inline-start: 4px solid var(--primary);
+      font-size: 1.5em;
+      line-height: 1.25;
+      padding-inline-start: 1rem;
+    }
+
+    h2 {
+      margin-block-start: 2rem;
+      margin-block-end: 1rem;
+      text-shadow: 2px 2px 0px var(--primary)
+    }
+
+    img {
+      border-radius: var(--bs-border-radius-lg);
+      margin-block: 1rem;
+      max-width: 100%;
+      height: auto;
+    }
+
+    li::marker {
+      color: var(--primary);
+    }
+  }
+</style>

@@ -1,7 +1,17 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 import hobbiesData from '@/data/hobbies';
 import portfolioData from '@/data/portfolio';
+
+const caseStudies = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/data/case-studies' }),
+  schema: ({ image }) => z.object({
+    title: z.string(),
+    excerpt: z.string(),
+    image: image(),
+  }),
+});
 
 const hobbies = defineCollection({
   loader: () => {
@@ -27,4 +37,4 @@ const portfolio = defineCollection({
   }),
 });
 
-export const collections = { hobbies, portfolio };
+export const collections = { caseStudies, hobbies, portfolio };

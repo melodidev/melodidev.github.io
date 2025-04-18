@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://melodi.dev/sitemap-index.xml

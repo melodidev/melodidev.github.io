@@ -1,4 +1,5 @@
 // @ts-check
+import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 import path from 'path';
 
@@ -6,6 +7,7 @@ import path from 'path';
 export default defineConfig({
   site: 'https://melodi.dev',
   trailingSlash: 'never',
+  integrations: [sitemap()],
   build: {
     assets: 'assets',
     inlineStylesheets: 'never',

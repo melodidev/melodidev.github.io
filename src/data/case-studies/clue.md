@@ -1,5 +1,5 @@
 ---
-title: Case Study of the Clue App
+title: Clue
 excerpt: 'During my Master’s degree in Interaction Design, I took a course called *Emotional Design*, taught by Tanel and Sigmund. This course focused on understanding the emotional aspects of digital product design in a world where functionality and usability have been the main priorities for many years. In other words, we were expected to choose a mundane app and improve its design by focusing on emotional elements. After a quick research session, I chose *Clue* as my app.'
 image: '@/assets/images/case-studies/clue-1.jpg'
 ---

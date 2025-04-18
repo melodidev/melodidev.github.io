@@ -1,5 +1,5 @@
 ---
-title: The Project of Willuplay
+title: Willuplay
 excerpt: "When I first started my Master's degree, I took a course called *Introduction to Interaction Design*. Every year, a general topic is chosen, and students are divided into groups to work on projects related to it. The topic for our year was the social life of Tallinners. My teammates were Luīza Stibe and Tõnis Bender."
 image: '@/assets/images/case-studies/willuwalk-1.jpg'
 ---

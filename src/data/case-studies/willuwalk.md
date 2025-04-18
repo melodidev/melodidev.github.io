@@ -6,7 +6,7 @@ image: '@/assets/images/case-studies/willuwalk-1.jpg'
 
 When I first started my Master's degree, I took a course called _Introduction to Interaction Design_. Every year, a general topic is chosen, and students are divided into groups to work on projects related to it. The topic for our year was the social life of Tallinners. My teammates were Luīza Stibe and Tõnis Bender.
 
-## Our Mission: Boosting Tallinners' Social Life!
+## Our mission: Boosting Tallinners' social life!
 
 ![](@/assets/images/case-studies/willuwalk-1.jpg)
 

@@ -14,7 +14,7 @@ Clue is a period tracker with over 10 million active users worldwide. It offers 
 
 ![](@/assets/images/case-studies/clue-2.jpg)
 
-## Clue is Doing a Great Job
+## Clue is doing a great job
 
 At first, I thought Clue had a great design because it was:
 
@@ -38,11 +38,11 @@ So maybe Clue is doing a _good_ job, but not a _great_ job.
 
 > “Taking emotions into consideration, differentiates good design from great design.”
 
-## A Bit of Insight
+## A bit of insight
 
 I don’t think that “bad” emotions are bad. Of course, they make us feel bitter, but they are not something we shouldn’t feel. On the contrary, they can show us that something is wrong and guide us to see what it is, so we can work on it and make it better.
 
-## Sharing Comes With Being Vulnerable
+## Sharing comes with being vulnerable
 
 Then I told myself, isn’t feeling anxious normal? Because Clue is a medical app, maybe it shouldn’t have any responsibility to make users feel a certain way. During one of my conversations with Sigmund, he made me realize that the data users put into Clue is actually personal data, which differs from period flow to how they feel during the day. Sharing so much personal information about ourselves could make us vulnerable. So, users need to feel supported and cared for.
 
@@ -50,7 +50,7 @@ After figuring that point out, finding the “how might we” question wasn’t 
 
 > How might we create a caring experience within Clue that acknowledges user’s emotions and supports them when tracking their period?
 
-## Slight New Designs of Clue
+## Slight new designs of Clue
 
 During the design process, I avoided turning Clue into a completely new app. I already found Clue to be quite effective as it was. My goal was to stay true to the existing version of Clue and create the greatest possible impact through small changes.
 
@@ -76,7 +76,7 @@ While on the home screen, users can click on the 'learn more about ...' text. Th
 
 The last change I made gives users the ability to change and create their own color theme for the app’s interface, making them feel welcomed and providing a more personalized experience.
 
-## So, What’s Next?
+## So, what’s next?
 
 The changes I planned to make weren’t limited to these. But considering that this was a solo student project with a set deadline, I made a list of additional changes and topics that need further work.
 

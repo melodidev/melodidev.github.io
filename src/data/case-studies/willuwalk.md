@@ -43,3 +43,5 @@ By adding the event organizing and attending feature, we aimed to enhance commun
 ## Willuwalk x Ixd.ma
 
 One of our teammates, Tõnis, reached out to _Willuwalk_ and presented our idea to them. We had a meeting with _Willuwalk_ where we explained our concept, and we were featured on their [social media pages](https://www.linkedin.com/posts/willuwalk-app_at-the-end-of-last-year-we-had-the-chance-activity-7300851907932123136-BmfS).
+
+📷 <small>_Photos by [Tõnis Bender](https://tonisben.dev/)_</small>

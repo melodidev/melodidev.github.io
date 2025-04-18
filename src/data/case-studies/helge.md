@@ -63,3 +63,5 @@ The problem Helge has been facing has multiple facets. The data provided by stud
 Some specialists find the statistics Helge provides as a helpful tool to start discussions in sessions, but struggle with interpreting the results.
 
 Even though school staff are skeptical about the app, it's important to remember that the core issue Helge is trying to address is students' well-being. It should help them learn how to build self-confidence. Students are seeking help and need to feel that their feelings are being taken seriously by others. Helge can be a building block to bridge the gap between students and the support they need.
+
+📷 <small>_Photos by [Tõnis Bender](https://tonisben.dev/)_</small>

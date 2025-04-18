@@ -1,6 +1,6 @@
 ---
 title: Helge
-excerpt: "This research report includes sections from the investigation our team conducted for the client, Helge. Our team's efforts included conducting interviews with psychologists and teachers, shadow-observing classes, testing the app ourselves, and investigating potential similar apps. For the selected parts of the case study, I am only including the areas to which I contributed: desk research, interviews with teens, and research synthesis. Team members were Tõnis Bender and Jayneet Sanchaniya."
+excerpt: "Research report on Helge, an app designed to monitor students' mental health, including desk research and interviews"
 image: '@/assets/images/case-studies/helge-1.jpg'
 ---
 

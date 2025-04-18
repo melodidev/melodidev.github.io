@@ -1,10 +1,10 @@
 ---
 title: Clue
-excerpt: 'During my Master’s degree in Interaction Design, I took a course called *Emotional Design*, taught by Tanel and Sigmund. This course focused on understanding the emotional aspects of digital product design in a world where functionality and usability have been the main priorities for many years. In other words, we were expected to choose a mundane app and improve its design by focusing on emotional elements. After a quick research session, I chose *Clue* as my app.'
+excerpt: 'Improving period tracker app Clue to create a more caring and supportive experience, acknowledging user emotions and feelings'
 image: '@/assets/images/case-studies/clue-1.jpg'
 ---
 
-During my Master’s degree in Interaction Design, I took a course called _Emotional Design_, taught by Tanel and Sigmund. This course focused on understanding the emotional aspects of digital product design in a world where functionality and usability have been the main priorities for many years. In other words, we were expected to choose a mundane app and improve its design by focusing on emotional elements. After a quick research session, I chose _Clue_ as my app.
+During my master’s degree in Interaction Design, I took a course called _Emotional Design_, taught by Tanel and Sigmund. This course focused on understanding the emotional aspects of digital product design in a world where functionality and usability have been the main priorities for many years. In other words, we were expected to choose a mundane app and improve its design by focusing on emotional elements. After a quick research session, I chose _Clue_ as my app.
 
 ## About Clue
 

@@ -1,6 +1,6 @@
 ---
 title: Willuplay
-excerpt: "When I first started my Master's degree, I took a course called *Introduction to Interaction Design*. Every year, a general topic is chosen, and students are divided into groups to work on projects related to it. The topic for our year was the social life of Tallinners. My teammates were Luīza Stibe and Tõnis Bender."
+excerpt: "App concept aimed at boosting parents' social lives and sense of community, enabling them to host events, share workloads and connect with others"
 image: '@/assets/images/case-studies/willuwalk-1.jpg'
 ---
 

@@ -1,14 +1,14 @@
 ---
 title: Research Report of Helge
 excerpt: "This research report includes sections from the investigation our team conducted for the client, Helge. Our team's efforts included conducting interviews with psychologists and teachers, shadow-observing classes, testing the app ourselves, and investigating potential similar apps. For the selected parts of the case study, I am only including the areas to which I contributed: desk research, interviews with teens, and research synthesis. Team members were Tõnis Bender and Jayneet Sanchaniya."
-image: '@/assets/images/case-studies/helge-7.jpg'
+image: '@/assets/images/case-studies/helge-1.jpg'
 ---
 
 **Selected Parts from Research Report of Helge** 
 
 This research report includes sections from the investigation our team conducted for the client, Helge. Our team's efforts included conducting interviews with psychologists and teachers, shadow-observing classes, testing the app ourselves, and investigating potential similar apps. For the selected parts of the case study, I am only including the areas to which I contributed: desk research, interviews with teens, and research synthesis. Team members were Tõnis Bender and Jayneet Sanchaniya.
 
-Slide Number 7
+![](@/assets/images/case-studies/helge-1.jpg)
 
 **About Helge**  
 The Helge app is a digital tool designed by the Helge Kool NGO to improve and monitor the well-being of students aged 13-19 by tracking their emotional health through regular check-ins, providing personalized feedback, and offering group assessments based on the responses. By providing students and school staff with simple, accessible surveys, the app encourages self-reflection and offers data-driven advice on possible improvements.
@@ -16,7 +16,7 @@ The Helge app is a digital tool designed by the Helge Kool NGO to improve and mo
 **Research Objective**  
 Our team's objective is to identify and improve user experience issues with the Helge app, focusing on schools and students. The core challenge is to transform Helge’s existing data-based mental health analysis platform into a user-friendly, visually intuitive dashboard. 
 
-Slide Number 8
+![](@/assets/images/case-studies/helge-2.jpg)
 
 **Desk research: Struggles of Today's Students**  
 Mental health challenges are becoming increasingly common among students, especially those from low-income backgrounds. Many young people are feeling overwhelmed by the pressures of school, and this is particularly true for 15 year old girls, who report the highest levels of stress related to school. A large number of students also experience symptoms of depression and sadness on a regular basis, and many feel that the support available to them through schools or local services just isn’t enough, especially for those with disabilities or financial difficulties. Other lifestyle factors, like poor diet, lack of sleep, and not getting enough physical activity also contribute to the decline in mental health. All of this adds up, and students are left feeling like they’re under constant pressure with nowhere to turn.
@@ -25,7 +25,7 @@ One of the key issues is the shortage of qualified mental health professionals, 
 
 Another layer to the problem is that teachers and parents often don’t see eye to eye when it comes to a child’s well-being. This disconnect can mean that students fall through the cracks, with adults assuming someone else is taking care of the problem. What really makes a difference for students are things like having strong relationships, being given meaningful choices in their learning, and engaging in tasks that feel relevant and rewarding. These elements help build confidence and emotional resilience, but they’re not always present in today’s classrooms.
 
-Slide Number 9
+![](@/assets/images/case-studies/helge-3.jpg)
 
 **Interviews with Youngsters**  
 We managed to conduct interviews with three teens, two of whom were extreme cases. All of them had taken some kind of psychological assessment during school a few times, but nothing like Helge. The two extreme cases had troubles in life (abusive families, financial difficulties, suicidal tendencies) and sought help from school psychologists, but the "help" was ineffective. They ended up abandoning their family homes and dropping out of high school.
@@ -50,7 +50,7 @@ Without me asking, they started talking about possible features they would like 
 
 **"I feel like it would really help me during my high school years."**
 
-Slide Number 10
+![](@/assets/images/case-studies/helge-4.jpg)
 
 **Research Synthesis**  
 The Estonian education system lacks sufficient tools and services to support students. Helge strives to address this gap, but its effectiveness and ability to draw meaningful conclusions from the data collected remain unclear. Schools are skeptical about the value it provides and struggle to find practical uses for the data, making it difficult to create actionable plans based on the information. On the other hand, students are in need of support and face challenges in accessing it from schools or adults, which makes it harder for them to cope with mental health issues. Helge needs a better platform to measure students' well-being and present this data clearly to school psychologists. The app can help support students by fostering a connection between them and school staff, while also providing schools with valuable data to improve their approach.

@@ -10,10 +10,10 @@ During my Master’s degree in Interaction Design, I took a course called *Emoti
 
 **About Clue**
 
-Slide Number 1  
+![](@/assets/images/case-studies/clue-1.jpg)  
 Clue is a period tracker with over 10 million active users worldwide. It offers four different modes: menstrual health, conception, pregnancy, and perimenopause. For the sake of the course’s scope and timeline, I decided to focus only on the basic *menstrual health* mode in terms of functionality and user base.
 
-Slide Number 2
+![](@/assets/images/case-studies/clue-2.jpg)
 
 **Clue is Doing a Great Job**
 
@@ -50,13 +50,13 @@ So maybe Clue is doing a good job, but not a great job.
 **Slight New Designs of Clue**  
 During the design process, I avoided turning Clue into a completely new app. I already found Clue to be quite effective as it was. My goal was to stay true to the existing version of Clue and create the greatest possible impact through small changes.
 
-Slide Number 3
+![](@/assets/images/case-studies/clue-3.jpg)
 
 The first change I made was to the tone of voice. Instead of the scary “your period is 1 day late” message, acknowledging that late periods are not uncommon might ease users' feelings of anxiety.
 
 The button below encourages users to provide data about how they are feeling during the day. Since it shows the same message every time, this text area could be used to display messages about their flow, creating a more personalized experience.
 
-Slide Number 4
+![](@/assets/images/case-studies/clue-4.jpg)
 
 After users enter their data, they are essentially met with a standard screen that isn’t really related to the information they just provided. Instead, a screen that acknowledges their feelings, shows them that they're not alone in dealing with those emotions, offers personalized solutions, and is enjoyable to explore could create a much better experience.
 
@@ -64,11 +64,11 @@ A matching quote from a book, movie, or series to acknowledge the feelings of us
 Data visualization to show the feelings of other users, providing a sense of group support.  
 Suggested articles based on the user's mood and situation to offer personalized solutions.
 
-Slide Number 5
+![](@/assets/images/case-studies/clue-5.jpg)
 
 While on the home screen, users can click on the 'learn more about ...' text. This takes them to a general page with detailed information about the cycle phase they’re in (such as period or PMS), but it’s not personalized. Since Clue collects detailed data from its users, this page could be used to draw and display insights specific to each individual. For example, a delayed period might not be a cause for concern for everyone—if someone has recently changed their eating habits or traveled, a delay could actually be considered normal. This page could use data visualization to show users such patterns and help reassure them that there’s nothing to worry about, preventing unnecessary anxiety.
 
-Slide Number 6
+![](@/assets/images/case-studies/clue-6.jpg)
 
 The last change I made gives users the ability to change and create their own color theme for the app’s interface, making them feel welcomed and providing a more personalized experience.
 

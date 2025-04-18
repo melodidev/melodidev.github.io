@@ -1,7 +1,7 @@
 ---
 title: The Project of Willuplay
 excerpt: "When I first started my Master's degree, I took a course called *Introduction to Interaction Design*. Every year, a general topic is chosen, and students are divided into groups to work on projects related to it. The topic for our year was the social life of Tallinners. My teammates were Luīza Stibe and Tõnis Bender."
-image: '@/assets/images/case-studies/willuwalk-11.jpg'
+image: '@/assets/images/case-studies/willuwalk-1.jpg'
 ---
 
 **The Project of Willuplay**
@@ -10,7 +10,7 @@ When I first started my Master's degree, I took a course called *Introduction to
 
 **Our Mission: Boosting Tallinners' Social Life\!**
 
-Slide Number 11
+![](@/assets/images/case-studies/willuwalk-1.jpg)
 
 After our lecturer, Nesli, gave us the project topic, our first task was to figure out what it really meant. Since the concept itself was very broad, we tried to narrow it down by defining each word.
 
@@ -26,14 +26,14 @@ So, we decided to focus on parents. The interviews and desk research we conducte
 
 **How might we encourage parents to choose their adventure in the playgrounds of Tallinn?**
 
-Slide Number 12
+![](@/assets/images/case-studies/willuwalk-2.jpg)
 
 **Will U Play?**  
  After ideation, low-fi prototypes, and testing, we finally developed the concept we wanted to create, *Willuplay*. *Willuplay* is an app that provides parents with the opportunity to open their private yards to other families. It is an add-on to an already existing app called *Willuwalk*. Along with the existing goals of *Willuwalk*, we aim to encourage parents to follow their own adventure, provide a sense of community, allow them to share their workload with other parents, and help them manage their time.
 
 Instead of coming up with a completely new app idea, we decided to build this as an add-on to the already existing *Willuwalk*, an Estonia-based app. *Willuwalk* is an app focused on helping parents who walk with strollers to socialize. Its main feature is a map where parents can connect with other walking parents, join them, discover family-friendly places, collect points, and see their ranking on a leaderboard.
 
-Slide Number 13
+![](@/assets/images/case-studies/willuwalk-3.jpg)
 
  On top of the existing features, we wanted to add the ability to organize public or private events and attend these events. One of the key steps before people can open their places to others is building trust. For this reason, public events organized in this concept are crucial, as they will allow parents to meet each other and get an idea of what kind of people they are. To showcase these events, we added a "tornado" symbol on the map.
 

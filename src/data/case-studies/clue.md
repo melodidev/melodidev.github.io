@@ -30,7 +30,7 @@ I truly appreciate the values that Clue upholds. For that reason, I defined my f
 If Clue was doing such a great job, then why did I feel so anxious every time I used it?
 
 - It’s always bad news. Every time I opened Clue, it felt like I was opening it to receive bad news—either I had gotten my period, or it was late, or I was checking to see if I was experiencing PMS.
-- The red, weird icon—even just seeing the icon—would make me tense.
+- The red, wired icon—even just seeing the icon—would make me tense.
 - Scary messages—Clue didn’t really help with that feeling either. For example, even a message like "your period is 1 day late" could be frightening on its own.
 - Hospital feeling. Of course, I also can’t forget the feedback I got from my class presentations—Sofija said Clue felt like a hospital.
 
